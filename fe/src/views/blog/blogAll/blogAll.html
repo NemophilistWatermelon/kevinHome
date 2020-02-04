@@ -1,0 +1,11 @@
+<div class="blogAll d-layout">
+    <div class="blogBody" v-for='(item, index) in blogData' :key='index'>
+        <header>
+            <h2 class="ui-title">{{ item.blogTitle }}</h2>
+            <span><strong>发布于：</strong>{{ item.blogCreateTime | filter_Time }}</span>
+        </header>
+        <article class="blog-content d-layout" v-html='item.blogBody'>
+        </article>
+    </div>
+    <Profile></Profile>
+</div>

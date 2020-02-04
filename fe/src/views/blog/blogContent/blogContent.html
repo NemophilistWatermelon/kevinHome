@@ -1,0 +1,13 @@
+<div class="blog-content ">
+    <div class="b-tit">
+        <!-- "item.titles + ’/first‘“ -->
+        <!-- @click.native='handerClickTit($route)' -->
+        <router-link :to="{path:'/blog/blogDet/' + artIndex}" :title="tit">
+            {{tit}}
+        </router-link>
+        <span class="b-time"> <strong class="b-time-create">发表于：</strong>{{ time }}</span>
+    </div>
+    <!-- <div class="b-content" v-html='content'>
+    </div> -->
+    <router-view></router-view>
+</div>

@@ -1,0 +1,46 @@
+ $color_35 = #353535
+ 
+ .blog-content 
+        border:13px dashed #353535
+        margin-top 30px !important
+        padding 30px 30px
+        background-color #fff
+        border-radius 5px
+        filter opacity(.78)
+        transition filter .3s
+        box-shadow 0 5px 13px 0  $color_35
+    .blog-content:hover
+        filter opacity(1)
+    .blog-content > *
+        padding 10px 0 
+    .blog-content .b-tit
+        text-align left
+    .blog-content .b-tit a
+        color #000
+        font-size 1.2rem
+        font-weight bold
+        text-decoration none
+    .blog-content .b-tit a:hover
+        color #696565;
+    .blog-content .b-tit .b-time
+        display block
+        margin-top 10px
+        font-size 0.883rem
+        padding-left 0.2rem
+        color $color_35
+    .blog-content  .b-time-create
+        color #353535
+  
+    .blog-content .b-content
+        padding 10px 0
+        text-indent 2em
+        text-align left 
+
+     .blog-content .b-content p 
+        overflow hidden;
+        line-height 1.6
+        text-overflow ellipsis;
+        display -webkit-box;
+        -webkit-line-clamp 3;
+        -webkit-box-orient vertical;
+        font-size 18px
